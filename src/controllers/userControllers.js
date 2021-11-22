@@ -1,9 +1,9 @@
 const userService = require("../services/userService");
 
 const userController = {
-    async getUser(req, res) {
+    async getUsers(req, res) {
 
-        let user = await userService.getUser();
+        let user = await userService.getUsers();
 
         return res.json(user);
     }

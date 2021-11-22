@@ -4,11 +4,10 @@ const userModal = db.User;
 
 const userService = {
 
-    async getUser() {
+    async getUsers() {
         try {
-            let user = await userModal.findAll({
-            });
-            return user;
+            let Users = await userModal.findAll();
+            return Users;
 
         } catch (error) {
             console.log(error);
